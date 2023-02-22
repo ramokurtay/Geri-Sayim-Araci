@@ -1,0 +1,14 @@
+import time
+def countdown(t):
+    while t > 0:
+        print(t)
+        t -= 1
+        time.sleep(1)
+        
+print("Geri Sayıma hangi saniyeden başlayalım? Bir sayı giriniz:")
+seconds = input()
+while not seconds.isdigit():
+    print("Bu bir sayı değil! Lütfen sayı giriniz:")
+    seconds =input()
+seconds = int(seconds)
+countdown(seconds)
